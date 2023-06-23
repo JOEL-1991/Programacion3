@@ -1,11 +1,12 @@
 
-const http- require("http");
+const http= require("http");
 
-const hostname="127.0.0.1";
+const hostname= "127.0.0.1";
 const port= 8000;
 
-const server- http.createServer(function(req,res){
-
-    res.writehead(200, {"content-Type":"text/plain"});
+const server= http.createServer(function(req,res){
+    res.writeHead(200, {"Content-Type":"text/plain"});
     res.end("programacion3");
-})
+});
+
+
