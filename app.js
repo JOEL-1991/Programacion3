@@ -18,8 +18,8 @@ server: 'JOEL-RAMIREZ\SQLEXPRESS',
 Authentication: {
      type: 'default',
     options: {   
-            userName:'core',
-            password:'core1'
+            userName:'usap',
+            password:'usap1$'
     }
 },
 options: { 
@@ -31,7 +31,8 @@ options: {
 };
 
 var connection = new connection(config);
-connection.on('conect', function(err){
+connection.on('connect', function(err) {
+    
     console.log("Ingreso Correctamente  a  SQL");
 });
 
